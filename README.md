@@ -11,24 +11,26 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 
 ## SDK
 
-1. Write a [`Update`](#Update) function to execute it each frame. Simple example of writing champion ranges with spinjitzuu.
-
-```lua
-function Update(Game)
-	for id, champion in pairs(Game.champs) do
-		if (champion.is_visible and champion.is_alive and champion.health > 0) then
-			Game:DrawRange(champion,champion.atk_range, 2)
-		end
-	end
-end
-```
+1. Create a script file with ".lua" extension in "/scripts/" folder
 
 2. Write a [`Update`](#Update) function to execute it each frame. Simple example of writing champion ranges with spinjitzuu.
-
-```lua
-function DrawSettings(GUI)
-	enabled = GUI:Checkbox("enable script", enabled)
-	GUI:Text("Hello:)
-end
-```
+   ```js
+	function Update(Game)
+		for id, champion in pairs(Game.champs) do
+			if (champion.is_visible and champion.is_alive and champion.health > 0) then
+				Game:DrawRange(champion,champion.atk_range, 2)
+			end
+		end
+	end
+	```
+  
+3. Write a [`DrawSettings`](#DrawSettings) function to draw GUI settings.
+   ```js
+	function DrawSettings(GUI) 
+	  drawchamps = GUI:Checkbox("draw champs", drawchamps)
+	  drawminions = GUI:Checkbox("draw minions", drawminions)
+	  drawturrets = GUI:Checkbox("draw turrets", drawturrets)
+	  drawmissiles = GUI:Checkbox("draw missiles", drawmissiles)
+   end
+   ```
 

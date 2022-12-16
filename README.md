@@ -12,7 +12,8 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 ## SDK
 
 1. Write a [`Update`](#Update) function to execute it each frame. Simple example of writing champion ranges with spinjitzuu.
-   ```lua
+
+```lua
 	function Update(Game)
 		for id, champion in pairs(Game.champs) do
 			if (champion.is_visible and champion.is_alive and champion.health > 0) then
@@ -21,4 +22,5 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 		end
 	end
 ```
+
 

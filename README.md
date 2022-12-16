@@ -21,14 +21,4 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 		end
 	end
 ```
-  
-2. Write a [`DrawSettings`](#DrawSettings) function to draw GUI settings.
-   ```js
-	function DrawSettings(GUI) 
-	  drawchamps = GUI:Checkbox("draw champs", drawchamps)
-	  drawminions = GUI:Checkbox("draw minions", drawminions)
-	  drawturrets = GUI:Checkbox("draw turrets", drawturrets)
-	  drawmissiles = GUI:Checkbox("draw missiles", drawmissiles)
-    end
-   ```
 

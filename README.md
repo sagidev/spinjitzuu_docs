@@ -1,7 +1,7 @@
 # spinjitzuu air
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/989659099203506267/989659796003233862/watermark.png" alt="spinlogo" width="512">
-
+</div>
 ## What is this?
 spinjitzuu air is an External LUA based League of Legends scripting platform with excellent DX11 no-performance loss drawings working on all resolution.
 

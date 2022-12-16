@@ -23,4 +23,12 @@ function Update(Game)
 end
 ```
 
+2. Write a [`Update`](#Update) function to execute it each frame. Simple example of writing champion ranges with spinjitzuu.
+
+```lua
+function DrawSettings(GUI)
+	enabled = GUI:Checkbox("enable script", enabled)
+	GUI:Text("Hello:)
+end
+```
 

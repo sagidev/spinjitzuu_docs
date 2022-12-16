@@ -20,8 +20,8 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 			end
 		end
 	end
-  ```
-
+```
+  
 2. Write a [`DrawSettings`](#DrawSettings) function to draw GUI settings.
    ```js
 	function DrawSettings(GUI) 

@@ -55,19 +55,19 @@ position = champion.pos
 Available Functions:
 - GetAttackSpeed(float gametime) - returns real attackspeed with lethaltempo stuff included
 ```lua
-champion.GetAttackSpeed(gametime)
+champion:GetAttackSpeed(gametime)
 ```
 - GetSpellCooldown(char spell, float gametime) - returns spells cooldown in seconds
 ```lua
-champion.GetSpellCooldown('Q',gametime)
+champion:GetSpellCooldown('Q',gametime)
 ```
 - IsSpellReady(char spell, float gametime) - boolean that returns if spell is ready to use
 ```lua
-champion.IsSpellReady('Q', gametime)
+champion:IsSpellReady('Q', gametime)
 ```
 - HasBuff(string buffname, float gametime) - boolean that returns if specified buff is active or not
 ```lua
-champion.HasBuff("JinxQ",gametime)
+champion:HasBuff("JinxQ",gametime)
 ```
 
 ## GUI

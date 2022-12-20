@@ -41,3 +41,25 @@ Game:PressKey(int key)
 Game:IsKeyDown(int key)
 ```
 
+## Objects
+
+Available Properties:
+name, health, max_health, mana, max_mana, base_ad, bonus_ad, atk_range, attack_speed, armor, magic_resist, is_visible, is_alive, is_targetable, pos
+
+Available Functions:
+- GetAttackSpeed(float gametime) - returns real attackspeed with lethaltempo stuff included
+	[champion.GetAttackSpeed(gametime)]
+- GetSpellCooldown(char spell, float gametime) - returns spells cooldown in seconds
+	[champion.GetSpellCooldown('Q',gametime)]
+- IsSpellReady(char spell, float gametime) - boolean that returns if spell is ready to use
+	[champion.IsSpellReady('Q', gametime)]
+- HasBuff(string buffname, float gametime) - boolean that returns if specified buff is active or not
+	[champion.HasBuff("JinxQ",gametime)]
+
+
+Example of usage
+```lua
+hp = champion.health
+position = champion.pos
+```
+

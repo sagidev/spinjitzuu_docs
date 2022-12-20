@@ -69,6 +69,10 @@ champion:IsSpellReady('Q', gametime)
 ```lua
 champion:HasBuff("JinxQ",gametime)
 ```
+- GetBuffCount(string buffname, float gametime) - returns an amount of stacks of desired buff. if buff is not active, then return is 0
+```lua
+stacks = champion:GetBuffCount("TwitchDeadlyVenom", gametime)
+```
 
 ## GUI
 

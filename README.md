@@ -33,8 +33,11 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 	  keybind = GUI:KeySelect("Orbwalker key", keybind)
    end
    ```
-## Documentation
+## Inputs
 ```lua
-	Game:PressRightClick()
+Game:PressRightClick()
+Game:PressLeftClick()
+Game:PressKey(int key)
+Game:IsKeyDown(int key)
 ```
 

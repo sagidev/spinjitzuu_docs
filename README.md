@@ -48,7 +48,9 @@ name, health, max_health, mana, max_mana, base_ad, bonus_ad, atk_range, attack_s
 
 Available Functions:
 - GetAttackSpeed(float gametime) - returns real attackspeed with lethaltempo stuff included
-	[champion.GetAttackSpeed(gametime)]
+```lua
+champion.GetAttackSpeed(gametime)
+```
 - GetSpellCooldown(char spell, float gametime) - returns spells cooldown in seconds
 	[champion.GetSpellCooldown('Q',gametime)]
 - IsSpellReady(char spell, float gametime) - boolean that returns if spell is ready to use

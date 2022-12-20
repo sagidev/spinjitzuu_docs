@@ -52,11 +52,17 @@ Available Functions:
 champion.GetAttackSpeed(gametime)
 ```
 - GetSpellCooldown(char spell, float gametime) - returns spells cooldown in seconds
-	[champion.GetSpellCooldown('Q',gametime)]
+```lua
+[champion.GetSpellCooldown('Q',gametime)]
+```
 - IsSpellReady(char spell, float gametime) - boolean that returns if spell is ready to use
-	[champion.IsSpellReady('Q', gametime)]
+```lua
+[champion.IsSpellReady('Q', gametime)]
+```
 - HasBuff(string buffname, float gametime) - boolean that returns if specified buff is active or not
-	[champion.HasBuff("JinxQ",gametime)]
+```lua
+[champion.HasBuff("JinxQ",gametime)]
+```
 
 
 Example of usage

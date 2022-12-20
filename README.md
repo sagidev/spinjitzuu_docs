@@ -40,8 +40,38 @@ spinjitzuu is an External LUA based League of Legends scripting platform with ex
 Game:PressRightClick()
 Game:PressLeftClick()
 Game:PressKey(int key)
-Game:IsKeyDown(int key)
+Game:IsKeyDown(int key) [Boolean]
+Game:GetCursor() [Vector2]
+Game:MoveMouse(int x, int y)
 ```
+## Game
+Available Properties:
+arrays: {champs, minions, turrets, missiles}
+floats: time 
+
+Available Functions:
+- GetPlayer()
+```lua
+Game:GetPlayer()
+```
+
+- GetChampionScreenPos(LeagueObject champion) - returns a Vector2 of object's screen position
+```lua
+screen_pos = Game:GetChampionScreenPos(champion)
+```
+- IsOnScreen(LeagueObject champion) - returns a boolean
+```lua
+test = Game:IsOnScreen(champion)
+```
+- Distance(LeagueObject champion1, LeagueObject champion2) - returns a Vector2
+```lua
+test = Game:Distance(champion1,champion2)
+```
+- Randomize(int fromnumber, int tonumber) - returns a Vector2
+```lua
+test = Game:Randomize(10,20)
+```
+
 
 ## Objects
 

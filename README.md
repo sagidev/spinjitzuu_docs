@@ -13,6 +13,8 @@ spinjitzuu air is an External LUA based League of Legends scripting platform wit
 
 # SDK
 
+## Basic Guide
+
 1. Create a script file with ".lua" extension in "/scripts/" folder
 
 2. Write a [`Update`](#Update) function to execute it each frame. Simple example of writing champion ranges with spinjitzuu.
@@ -45,6 +47,10 @@ Game:IsKeyDown(int key)
 
 Available Properties:
 name, health, max_health, mana, max_mana, base_ad, bonus_ad, atk_range, attack_speed, armor, magic_resist, is_visible, is_alive, is_targetable, pos
+```lua
+hp = champion.health
+position = champion.pos
+```
 
 Available Functions:
 - GetAttackSpeed(float gametime) - returns real attackspeed with lethaltempo stuff included
@@ -53,21 +59,50 @@ champion.GetAttackSpeed(gametime)
 ```
 - GetSpellCooldown(char spell, float gametime) - returns spells cooldown in seconds
 ```lua
-[champion.GetSpellCooldown('Q',gametime)]
+champion.GetSpellCooldown('Q',gametime)
 ```
 - IsSpellReady(char spell, float gametime) - boolean that returns if spell is ready to use
 ```lua
-[champion.IsSpellReady('Q', gametime)]
+champion.IsSpellReady('Q', gametime)
 ```
 - HasBuff(string buffname, float gametime) - boolean that returns if specified buff is active or not
 ```lua
-[champion.HasBuff("JinxQ",gametime)]
+champion.HasBuff("JinxQ",gametime)
 ```
 
+## GUI
 
-Example of usage
+- Text
 ```lua
-hp = champion.health
-position = champion.pos
+GUI:Text("test")
+```
+- Button
+```lua
+if GUI:Button("text")then
+end
+```
+- Separator
+```lua
+GUI:Separator()
+```
+- SameLine
+```lua
+GUI:SameLine()
+```
+- CheckBox
+```lua
+bool text = GUI:CheckBox("test", false)
+```
+- SliderInt
+```lua
+int value = GUI:SliderInt("test", value, int valMin, int valMax)
+```
+- SliderFloat
+```lua
+float value = GUI:SliderFloat("test", value, float valMin, float valMax)
+```
+- KeySelect
+```lua
+int key = GUI:KeySelect("test", key)
 ```
 

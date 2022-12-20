@@ -3,7 +3,7 @@
 </div>
 
 ## What is this?
-spinjitzuu air is an External LUA based League of Legends scripting platform with excellent DX11 no-performance loss drawings working on all resolution.
+spinjitzuu is an External LUA based League of Legends scripting platform with excellent DX11 no-performance loss drawings working on all resolution.
 
 ## Core Features
 - Undetectability - As platform is fully external, ban chance is almost impossible.
